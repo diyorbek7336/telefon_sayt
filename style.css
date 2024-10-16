@@ -1,0 +1,142 @@
+@import url(https://fonts.googleapis.com/css2?family=Nunito+Sans:wght@100;200;300;400;500;600;800;900&display=swap);
+
+body {
+  font-family: 'Nunito Sans', sans-serif;
+}
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: sans-serif;
+    text-decoration: none;
+    list-style-type: none;
+}
+
+.container {
+    width: 85%;
+    margin: 0 auto;
+}
+
+
+.flex {
+    display: flex;
+    align-items: center;
+}
+
+.between {
+    justify-content: space-between;
+    align-items: center;
+}
+
+header {
+    background: #2B3844;
+    padding: 23px 0;
+    color: #fff;
+}
+
+
+body {
+    background: #202C36;
+}
+
+
+main {
+    padding-top: 48px;
+}
+.wrapper-input {
+    background: #2B3844;
+    width: 480px;
+    font-size: 14px;
+    color: #fff;
+    padding: 19px;
+    display: flex;
+    gap: 24px;
+    align-items: center;
+    margin-bottom: 48px;
+    padding-left: 32px;
+}
+
+.wrapper-input:focus-within {
+    border: 2px solid white;
+}
+
+input {
+    background: transparent;
+    border: none;
+    outline: none;
+    color: #fff;
+}
+
+
+.cards {
+    display: flex;
+    width: 100%;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    align-items: center;
+    row-gap: 100px;
+}
+
+.card {
+    width: 264px;
+    background: #2B3844 ;
+    padding-bottom: 32px;
+}
+
+.card img {
+    width: 264px;
+}
+
+.card p {
+    text-align: center;
+    margin-top: 32px;
+    color: #fff;
+    font-size: 18px;
+    font-weight: 800;
+
+}
+
+@media (max-width:567px){     
+    body{
+        background-color: aqua;
+    }
+
+    .wrapper-input{
+        width: 343px;
+        padding: 14px 0;
+        padding-left: 32px;
+
+    }
+
+    input{
+        font-size: 12px;
+
+    }
+
+    .cards{
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        row-gap: 126px;
+    }
+}
+
+
+
+
+/*planshet uchun*/
+
+@media (max-width:768px){
+    .cards{
+        column-gap: 240px;
+        flex-wrap: wrap;
+        align-items: center;
+        justify-content: space-between;
+    }
+
+
+    .wrapper-input{
+        width: 700px;
+        margin: 0 auto 48px auto;
+    }
+}
